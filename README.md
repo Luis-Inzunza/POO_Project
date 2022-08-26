@@ -2,17 +2,17 @@
 
 # Team Members
 
-Andrea Margarita Mendoza Tec
+[Andrea Margarita Mendoza Tec](CVs/CV_AndreaMendoza.pdf)
 
-Arturo Andres Quezada Suarez
+[Arturo Andres Quezada Suarez](CVs/)
 
-Francisco Ramos Aleman
+[Francisco Ramos Aleman](CVs/CV_FranciscoRamos.pdf)
 
-Ileana Gabriela Castillo Sánchez
+[Ileana Gabriela Castillo Sánchez](CVs/CV_CastilloIleana.pdf)
 
-Luis Alejandro Cruz Inzunza
+[Luis Alejandro Cruz Inzunza](CVs/)
 
-Luis Miguel Medina Avila
+[Luis Miguel Medina Avila](CVs/CV_MedinaLuis.pdf)
 
 ## Index :open_file_folder:
 
