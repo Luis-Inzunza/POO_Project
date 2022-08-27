@@ -4,7 +4,7 @@
 
 [Andrea Margarita Mendoza Tec](CVs/CV_AndreaMendoza.pdf)
 
-[Arturo Andres Quezada Suarez](CVs/)
+[Arturo Andres Quezada Suarez](CVs/CV_ArturoQuezada.pdf)
 
 [Francisco Ramos Aleman](CVs/CV_FranciscoRamos.pdf)
 
