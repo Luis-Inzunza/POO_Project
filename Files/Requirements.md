@@ -31,15 +31,22 @@ here we are the requirements for the program.
 
 ### Scope 
 
-1. 
+1.The Software will save data of the official documentation that will be shown in the final documentation
    
-2. 
+2.The Software can show user the saved data
+
+3.The Software can edit the saved data
+
+4.The Software can display a notification in the menú when any data expires
    
 ### Limitations 
 
-1. 
-   
-2. 
+1.The data will be stored locally, either on the device or on some external memory.
+
+2.The Software cannot create new fields
+
+3.The Software can only edit, delete and create a on documentation at a time
+ 
 
 ## User histories
 
