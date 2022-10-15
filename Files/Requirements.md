@@ -12,18 +12,22 @@ here we are the requirements for the program.
 * [Requerimientos No Funcionales](#Item5)
 
 ## Problem Description
+Suarez Agency has been active for the last 30 years having the documentation required for the departure of commercial fishing vessels. 
+Problem is, with each license that is processed, official documentation is accumulated regarding the vessels, composed by: Certificado Nacional de Seguridad Marítima, Certificado Nacional de Matricula, Permisos de Pesca, as well as the official documentations of the crew. 
 
+Due to this, the time it takes to process the documentation, which is also computed manually on a template, is quite long. Furthermore, most of the documents are valid, therefore, a verification step is required, which ends up lengthening the process. 
 
+This opportunity was discovered by one of the team members, who is a close relative of the head of the Agency, and this made it easier for us to approach them in order to help solve these problems.
 
 ## Main objective 
 
-
+Our project’s main goal is to help the Agency streamline the documentation process and alleviate the burden, both physical and virtual. All to optimize times in the processing of documents. For this, a system will be developed in which the user can store the required information and documentation. To be able to access them, update them and export them to a template that will be generated automatically. 
 
 <a name="Item2"></a>
 
 ## User Profile 
 
-
+The beneficiary of this program will be the Head of the Suarez Agency, Civil Engineer Luis Andrés Suárez Quezada, 62 years old, a service provider with authorization of the SEMAR (Secretaría de Marina), Shipping Agent.
 
 <a name="Item3"></a>
 
