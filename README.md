@@ -27,6 +27,6 @@
 
 * [Material of presentation]()
 
-* [Metric of Progress]()
+* [Metric of Progress](/Files/Metrics1.pdf)
 
 * [Video presentation]()
