@@ -20,7 +20,7 @@
 
 * [Requirements](Files/Requirements.md)
 * [Work Method and Organization](Files/WorkMethod.md)
-* [Diagram Class]()
+* [Diagram Class](Media/ClassDiagramBarquis.png)
 * [Logbook]()
 
 ## First Stage :closed_book:
