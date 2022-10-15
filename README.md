@@ -1,7 +1,6 @@
-# Undefine Proyect 
+# Barquis Proyect
 
 # Team Members
-
 
 [Ileana Gabriela Castillo Sánchez](CVs/CV_CastilloIleana.pdf)
 
@@ -13,10 +12,15 @@
 
 [Francisco Ramos Aleman](CVs/CV_RamosFrancisco.pdf)
 
+## About our work 
+
+
+
 ## Index :open_file_folder:
 
 * [Requirements](Files/Requirements.md)
 * [Work Method and Organization](Files/WorkMethod.md)
+* [Diagram Class]()
 * [Logbook]()
 
 ## First Stage :closed_book:
