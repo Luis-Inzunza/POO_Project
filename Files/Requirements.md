@@ -116,22 +116,22 @@ here we are the requirements for the program.
 | Priority | High  |
 | Description | The program will be scalable, allowing for any modification that the stakeholder requires. |
 
-| NFR_02 ||
+| NFR_03 ||
 |----------| ------ | 
 | Priority | Medium  |
 | Description | The program will be intuitive and easy to use, primarily focused on the use of elderly people. |
 
-| NFR_02 ||
+| NFR_04 ||
 |----------| ------ | 
 | Priority | Medium  |
 | Description | The program will be highly efficient with the use of data and general performance, assuring a time response of less than 3s for each action done like storing data. |
 
-| NFR_02 ||
+| NFR_05 ||
 |----------| ------ | 
 | Priority | High  |
 | Description | The program will be reliable with the use of data, avoiding any discrepancies and having continuity whit the data stored. |
 
-| NFR_02 ||
+| NFR_06 ||
 |----------| ------ | 
 | Priority | High  |
 | Description | The program will be integral, fulfilling all the functions and avoiding having useless characteristics considering the whole purpose of the program. |
