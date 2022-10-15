@@ -87,3 +87,4 @@ here we are the requirements for the program.
 | Description | The program will be safe and secure, avoiding all the situations that could endanger the information of the user such as information deletion. |
 
 ## Diagram Use case
+![Diagram](/Media/UseCaseDiagramBarquis.png)
