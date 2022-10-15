@@ -29,4 +29,4 @@
 
 * [Metric of Progress](/Files/Metrics1.pdf)
 
-* [Video presentation]()
+* [Video presentation](https://youtu.be/NaFzGoXHl6E)
