@@ -13,11 +13,11 @@
 Suarez Agency has been active for the last 30 years having the documentation required for the departure of commercial fishing vessels. 
 Problem is, with each license that is processed, official documentation is accumulated regarding the vessels, composed by: Certificado Nacional de Seguridad Marítima, Certificado Nacional de Matricula, Permisos de Pesca, as well as the official documentations of the crew. 
 
-Due to this, the time it takes to process the documentation, which is also computed manually on a template, is quite long. Furthermore, most of the documents are valid, therefore, a verification step is required, which ends up lengthening the process. 
+Due to this, the time it takes to process the documentation, which is also computed manually on a template, is quite long. Furthermore, most of the documents have and expiration date, therefore, a verification step is required, which ends up lengthening the process. 
 
 This opportunity was discovered by one of the team members, who is a close relative of the head of the Agency, and this made it easier for us to approach them in order to help solve these problems.
 
-## Main objective 
+## Main Objective 
 
 Our project’s main goal is to help the Agency streamline the documentation process and alleviate the burden, both physical and virtual. All to optimize times in the processing of documents. For this, a system will be developed in which the user can store the required information and documentation. To be able to access them, update them and export them to a template that will be generated automatically. 
 
@@ -87,6 +87,12 @@ The beneficiary of this program will be the Head of the Suarez Agency, Civil Eng
 | Priority | Low |
 | User Story | As a Shipping Agent, I want a 'Recycle bin' button so that I can restore or permanently delete information |
 | Acceptance Criteria | -Display 'Recycle bin' button below the main area. <br /> -'Recycle bin' button takes the user to the 'Recycle' area. <br /> -'Recycle' area display list of the deleted clients/ships. <br /> - Each element of the list displays 'Delete permanently' and 'Restore' buttons. <br /> -'Delete permanently' button permanently delete the information. <br /> - 'Restore' button restores the information to the system. <br /> -Displays a 'Back' button on the left bottom corner of the 'Recycle' area. <br /> -'Back' button takes the user to the main area. ||
+
+| US_6 ||
+|-----------|------------|
+| Priority | High |
+| User Story | As a Shipping Agent, I want a button to transfer the selected ship information to a format so that I remit the sail permissions faster. |
+| Acceptance Criteria | - User can select the ship/client that he wants to process. This action will take the user to the 'Register' area of that client/ship. <br /> - Display 'Format' button on the left bottom corner of the 'Register' area. <br /> - 'Format' button summons a dialog. <br /> -Dialog  display 'Aviso' and 'Resello' buttons. <br /> - 'Aviso' and 'Resello' buttons exports the information to different formats. ||
 
 ## Functional Requirements
 
