@@ -1,7 +1,5 @@
 # Requirements
 
-here we are the requirements for the program.
-
 ## Index
 
 * [Problem Description](#Item0)

@@ -1,4 +1,6 @@
-# Barquis Proyect
+# Barquis Project
+
+![](/Media/Interview.jpeg)
 
 # Team Members
 
@@ -14,18 +16,18 @@
 
 ## About our work 
 
-
+We work for Suarez Agency, focused on providing a faster solution to your permit document filling and generalization. Saving time and giving a lower error rate in the filling of these same while maintaining the security of the data of the agency and its customers.
 
 ## Index :open_file_folder:
 
 * [Requirements](Files/Requirements.md)
 * [Work Method and Organization](Files/WorkMethod.md)
 * [Diagram Class](Media/ClassDiagramBarquis.png)
-* [Logbook]()
+* [Logbook](/Files/LogBook%20Project.pdf)
 
 ## First Stage :closed_book:
 
-* [Material of presentation]()
+* [Material of presentation](/Files/First%20Stage.pdf)
 
 * [Metric of Progress](/Files/Metrics1.pdf)
 
