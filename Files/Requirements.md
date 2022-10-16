@@ -52,29 +52,32 @@ The beneficiary of this program will be the Head of the Suarez Agency, Civil Eng
 3.The Software can only edit, delete and create a on documentation at a time
  
 
-## User histories
+## User Stories
 
-| UH_1 | 
+| US_1 ||
+|----------|-------------|
+| Priority | High |
+| User story | As a Shipping Agent, I want a button to add new ship/client so that I can record the information included in the official documents |
+| Acceptance Criteria | - Display ‘New ship/client’ button on the right upper corner of the main area. <br /> - 'New ship/client' button takes the user to the 'Register' area. <br /> - 'Register' area includes empty boxes (or fields) that describe the information they should carry. <br /> - User should be able to type the information in each text box after clicking on it. <br /> - Display 'Save' button on the right bottom corner of the 'Register' area. <br /> User can click on 'Save' button to save the information. <br /> - 'Save' button should be inactive until all boxes are full. <br /> - 'Save' button becomes active when all boxes are full. <br /> - A notification pop ups notifying that the information bas been registered. <br /> - Notification display 'Back' and 'Kepp editing' button. <br /> - 'Back' button takes the user to the main area <br /> - 'Keep editing' button returns the user to the current 'Register' area. ||
+
+
+| US_2 | 
 |----------|  
 | As , I want , So that I  ||
 
-| UH_1 | 
+| US_3 | 
 |----------|  
 | As , I want , So that I  ||
 
-| UH_1 | 
+| US_4 | 
 |----------|  
 | As , I want , So that I  ||
 
-| UH_1 | 
+| US_4 | 
 |----------|  
 | As , I want , So that I  ||
 
-| UH_1 | 
-|----------|  
-| As , I want , So that I  ||
-
-| UH_1 | 
+| US_5 | 
 |----------|  
 | As , I want , So that I  ||
 
