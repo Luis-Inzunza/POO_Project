@@ -58,26 +58,35 @@ The beneficiary of this program will be the Head of the Suarez Agency, Civil Eng
 | User story | As a Shipping Agent, I want a button to add new ship/client so that I can record the information included in the official documents |
 | Acceptance Criteria | - Display ‘New ship/client’ button on the right upper corner of the main area. <br /> - 'New ship/client' button takes the user to the 'Register' area. <br /> - 'Register' area includes empty boxes (or fields) that describe the information they should carry. <br /> - User should be able to type the information in each text box after clicking on it. <br /> - Display 'Save' button on the right bottom corner of the 'Register' area. <br /> User can click on 'Save' button to save the information. <br /> - 'Save' button should be inactive until all boxes are full. <br /> - 'Save' button becomes active when all boxes are full. <br /> - A notification pop ups notifying that the information bas been registered. <br /> - Notification display 'Back' and 'Kepp editing' button. <br /> - 'Back' button takes the user to the main area <br /> - 'Keep editing' button returns the user to the current 'Register' area. ||
 
+| US_2 ||
+|----------|-------------|
+| Priority | High |
+| User story | As a Shipping Agent, I want a searching bar so that I can find any ship/client from the system. |
+| Acceptance Criteria | - Display a search bar on the left upper corner of the main area. <br /> - User should be able to type the name of the ship/client on the searching box after clicking on it. <br /> - Display a 'Search' button next to the search bar box. <br /> - User can click on the 'Search' button or type Enter to command the searching. <br /> - 'Search' button/Enter takes the user to the 'Results' area. <br /> - 'Results' area shows coincidences between the user input and ship/client from system. <br /> - User can click on any result. This action takes the user to the 'Register' area of that ship/client. <br /> - Display 'Back' button on the right bottom corner of the 'Results' area. <br /> - 'Back' button takes the user to the main area. ||
 
-| US_2 | 
-|----------|  
-| As , I want , So that I  ||
+| US_3 ||
+|----------|-------------|
+| Priority | Medium |
+| User Story | As a Shipping Agent, I want a button to edit the information of the selected ship so that I can update the information of it. |
+| Acceptance Criteria | - User can select the ship/client that he wants to edit. This action will take the user to the 'Register' area of that client/ship. <br /> - User should be able to edit the information inside of the boxes. <br /> - User can save the updated information following the same steps from the US_1. ||
 
-| US_3 | 
-|----------|  
-| As , I want , So that I  ||
+| US_4 ||
+|----------|-------------|
+| Priority | Medium |
+| User Story | As a Shipping Agent, I want a button to show the expired validities so that I know which information needs to be updated. |
+| Acceptance Criteria | - Display 'Expired Validities' button below the main area. <br /> -'Expired Validities' button takes the user to the 'Expired' area. <br /> - 'Expired' area display a list of the ships which have expired documents. <br /> - User should be able to select a ship to know which documents were expired. <br /> - 'Expired' area display 'Back' button on the left botton corner. <br /> - 'Back' button takes the user to the main area. ||
 
-| US_4 | 
-|----------|  
-| As , I want , So that I  ||
+| US_4 ||
+|-----------|------------|
+| Priority | Medium |
+| User Story | As a Shipping Agent, I want a button to delete so that I can remove all the information of the selected ship/client |
+| Acceptance Criteria | - User can select the ship/client that he wants to remove. This action will take the user to the 'Register' area of that client/ship. <br /> - Display a 'Delete' button on the left bottom corner of the 'Register' area. <br /> - 'Delete' button summons a confirm dialog. <br /> - Confirm dialog display 'Cancel' and 'OK' buttons. <br /> - User should be able to select 'Cancel' or 'OK'. <br /> -'Cancel' button cancels the action and closes the confirm dialog. <br /> -'Delete' button removes all the ship/client information and takes the user to the main area. ||
 
-| US_4 | 
-|----------|  
-| As , I want , So that I  ||
-
-| US_5 | 
-|----------|  
-| As , I want , So that I  ||
+| US_5 ||
+|-----------|------------|
+| Priority | Low |
+| User Story | As a Shipping Agent, I want a 'Recycle bin' button so that I can restore or permanently delete information |
+| Acceptance Criteria | -Display 'Recycle bin' button below the main area. <br /> -'Recycle bin' button takes the user to the 'Recycle' area. <br /> -'Recycle' area display list of the deleted clients/ships. <br /> - Each element of the list displays 'Delete permanently' and 'Restore' buttons. <br /> -'Delete permanently' button permanently delete the information. <br /> - 'Restore' button restores the information to the system. <br /> -Displays a 'Back' button on the left bottom corner of the 'Recycle' area. <br /> -'Back' button takes the user to the main area. ||
 
 ## Functional Requirements
 
