@@ -14,7 +14,7 @@
 
 [Francisco Ramos Aleman](CVs/CV_RamosFrancisco.pdf)
 
-## About our work 
+## Introduction
 
 We work for Suarez Agency, focused on providing a faster solution to your permit document filling and generalization. Saving time and giving a lower error rate in the filling of these same while maintaining the security of the data of the agency and its customers.
 

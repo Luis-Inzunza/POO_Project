@@ -7,7 +7,7 @@
 * [User Profile](#Item2)
 * [Scope and limitations of the project](#Item3)
 * [Functional Requirements](#Item4)
-* [Requerimientos No Funcionales](#Item5)
+* [No Functional Requirements](#Item5)
 
 ## Problem Description
 Suarez Agency has been active for the last 30 years having the documentation required for the departure of commercial fishing vessels. 
@@ -140,7 +140,7 @@ The beneficiary of this program will be the Head of the Suarez Agency, Civil Eng
 
 | NFR_02 ||
 |----------| ------ | 
-| Priority | High  |
+| Priority | Low  |
 | Description | The program will be scalable, allowing for any modification that the stakeholder requires. |
 
 | NFR_03 ||
