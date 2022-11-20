@@ -3,6 +3,7 @@ import Visual.Interfaz;
 import Model.Modelo;
 import java.awt.event.*;
 
+
 /////Inicio de programa//////
 public class Controlador {
     
@@ -30,5 +31,7 @@ public class Controlador {
         }
         
     }
+
+
     
 }
