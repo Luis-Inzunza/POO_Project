@@ -1,5 +1,5 @@
 package Model;
-import Clases.*; //Seleccionamos todas nuestras clases a utilizar
+//import Clases.*; //Seleccionamos todas nuestras clases a utilizar
 
 
 public class Modelo {

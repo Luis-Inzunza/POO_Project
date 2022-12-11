@@ -2,7 +2,6 @@ package Model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.*;
 
 
 public class Conexion {
@@ -15,7 +14,7 @@ public class Conexion {
             try{
                 Class.forName("org.sqlite.JDBC");
     
-                con =  DriverManager.getConnection("jdbc:sqlite:prueba.db");
+                con =  DriverManager.getConnection("jdbc:sqlite:Database.sql");
      
             }catch(Exception e)
             {
