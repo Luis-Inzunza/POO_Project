@@ -21,6 +21,7 @@ We work for Suarez Agency, focused on providing a faster solution to your permit
 ## Index :open_file_folder:
 
 * [Requirements](Files/Requirements.md)
+* [Design Interface](/Files/Design.md)
 * [Work Method and Tools](Files/WorkMethod.md)
 * [Diagram Class](Media/ClassDiagramBarquis.png)
 * [Logbook](/Files/LogBook%20Project.pdf)
