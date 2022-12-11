@@ -1,6 +1,7 @@
 # Barquis Project
 
-![](/Media/Interview.jpeg)
+![](/Media/Logo.png)
+![](/Media/Interview.jpeg) 
 
 # Team Members
 
