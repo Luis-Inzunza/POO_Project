@@ -62,7 +62,7 @@ public class PanelCliente extends javax.swing.JPanel {
         Fechas.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         Fechas.setText(Fecha);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Embarcacion");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
