@@ -6,6 +6,8 @@ package Visual.interfaces;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
+import java.nio.file.Path;
+
 import javax.swing.UIManager;
 
 /**
@@ -47,8 +49,9 @@ public class Login extends javax.swing.JFrame {
         panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Nombre_del_programa-removebg-preview.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Nombre_del_programa-removebg-preview.png"))); 
+        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+// NOI18N
 
         jLabel2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         jLabel2.setText("Nombre Del Programa");
@@ -142,7 +145,7 @@ public class Login extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            UIManager.setLookAndFeel( new FlatLightLaf() );
+            UIManager.setLookAndFeel( new FlatLightLaf());
         } catch( Exception ex ) {
             System.err.println( "Failed to initialize LaF" );
         }
@@ -150,10 +153,11 @@ public class Login extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Login().setVisible(true);
+            public void run() {  
+                 new Login().setVisible(true);
             }
         });
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

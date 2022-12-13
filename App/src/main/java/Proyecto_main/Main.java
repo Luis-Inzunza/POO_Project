@@ -1,6 +1,5 @@
 
 package Proyecto_main;
-import Model.Conexion;
 import Model.ConfTabla;
 import Model.Modelo;
 import Model.Query;
@@ -18,9 +17,8 @@ public class Main {
 
         try
         {
-            Conexion con = new Conexion();
-            Connection cc = con.connect();
-            System.out.println(ConfTabla.CheckDB(cc));
+
+            //System.out.println(getClass().getResource("/iconos/Nombre_del_programa-removebg-preview.png"));
             //System.out.println(Query.registrar(cc, "Palomon", "121234", "Ni idea", "Wakanda", "Vibranio"));
             
         }

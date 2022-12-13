@@ -10,6 +10,10 @@ package Visual.interfaces;
  */
 public class PanelCliente extends javax.swing.JPanel {
 
+    public String Nombre = "Nombre:";
+    public String NumBarco = "Num. Barcos:";
+    public String Fecha = "Fechas:";
+    
     /**
      * Creates new form PanelCliente
      */
@@ -24,7 +28,7 @@ public class PanelCliente extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    public void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         NomCliente = new javax.swing.JLabel();
@@ -50,13 +54,13 @@ public class PanelCliente extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(1000, 110));
 
         NomCliente.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 18)); // NOI18N
-        NomCliente.setText("Nombre ");
+        NomCliente.setText(Nombre);
 
         NumBarcos.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        NumBarcos.setText("Num. Barcos:");
+        NumBarcos.setText(NumBarco);
 
         Fechas.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        Fechas.setText("Fechas:");
+        Fechas.setText(Fecha);
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +93,7 @@ public class PanelCliente extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jButton1)
                 .addGap(31, 31, 31)
-                .addComponent(NomCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NomCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(80, 80, 80)
                 .addComponent(NumBarcos)
                 .addGap(101, 101, 101)

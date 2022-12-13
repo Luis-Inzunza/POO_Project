@@ -1,20 +1,38 @@
 package Controler;
 
 import java.sql.*;
+import java.util.List;
+
+import Clases.Cliente;
 public class ControlData {
     
-    private Connection con = null;
+    private static Connection con = null;
 
-    public void Conect() throws Exception
+    public static void Conect() throws Exception
     {
         try
         {
-            con = Model.Conexion.connect();
+            con = Model.Query.connect();
+            System.out.println(Model.ConfTabla.CheckDB(con,"Clientes"));
         }
         catch(Exception e)
         {
             System.out.println(e);
         }
        
+    }
+
+    public static List<Cliente> mostrarclientes()
+    {
+        List<Cliente> lista = null;
+        try
+        {
+            lista = Model.Query.mostrarCliente(con);
+        }catch(Exception e)
+        {
+            System.out.println(e);
+        }
+        
+        return lista;
     }
 }

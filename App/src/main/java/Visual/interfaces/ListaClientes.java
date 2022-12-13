@@ -5,7 +5,21 @@
 package Visual.interfaces;
 
 import com.formdev.flatlaf.FlatLightLaf;
+
+import Clases.Cliente;
+
 import javax.swing.UIManager;
+import Model.ConfTabla;
+import Model.Modelo;
+import Model.Query;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.List;
+
+import Controler.ControlData;
+import Controler.Controlador;
+import Visual.Interfaz;
 
 /**
  *
@@ -89,7 +103,7 @@ public class ListaClientes extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
         );
-
+        LeerClientes();
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -98,6 +112,30 @@ public class ListaClientes extends javax.swing.JFrame {
       PanelLista.add(pcliente);
       PanelLista.updateUI();
     }//GEN-LAST:event_AgregarBotonActionPerformed
+
+    public void LeerClientes() {//GEN-FIRST:event_AgregarBotonActionPerformed
+        conect();
+        List<Cliente> clientes = new ArrayList<Cliente>();
+        clientes = ControlData.mostrarclientes();
+        try
+        {
+            for(int x =0;x<clientes.size();x++)
+            {
+                System.out.print(clientes.get(x).getNombre());
+                PanelCliente pcliente = new PanelCliente();
+                pcliente.Nombre = clientes.get(x).getNombre() + " " + clientes.get(x).getApe();
+                pcliente.Fecha = clientes.get(x).getCorreo();
+                pcliente.NumBarco += " " + clientes.get(x).getbarcos();
+                pcliente.initComponents();
+                PanelLista.add(pcliente);
+                PanelLista.updateUI();
+            }
+        }catch(Exception e)
+        {
+            System.out.println(e);
+        }
+
+      }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -112,19 +150,18 @@ public class ListaClientes extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         
-        FlatLightLaf.setup();
+        //FlatLightLaf.setup();
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+
         try {
             UIManager.setLookAndFeel( new FlatLightLaf() );
         } catch( Exception ex ) {
             System.err.println( "Failed to initialize LaF" );
         }
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -132,6 +169,20 @@ public class ListaClientes extends javax.swing.JFrame {
                 new ListaClientes().setVisible(true);
             }
         });
+    }
+
+    public static void conect()
+    {
+        try
+        {
+            ControlData.Conect();
+            //System.out.println(Query.registrar(cc, "Palomon", "121234", "Ni idea", "Wakanda", "Vibranio"));
+            
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
