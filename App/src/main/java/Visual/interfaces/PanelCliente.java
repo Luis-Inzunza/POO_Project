@@ -17,7 +17,7 @@ public class PanelCliente extends javax.swing.JPanel {
     /**
      * Creates new form PanelCliente
      */
-     public String Nombre = "Nombre:";
+     public String Nombre;
      public String NumBarco = "Num. Barcos:";
      public String Fecha_S = "Creación";
 
@@ -30,6 +30,7 @@ public class PanelCliente extends javax.swing.JPanel {
         Date fechaActual = new Date();
         SimpleDateFormat formateador = new SimpleDateFormat("dd/MM/yyyy");
         String fechaComoTexto = formateador.format(fechaActual);
+        Nombre=n;
         nombreC.setText(n);
         telC.setText(t);
         correoC.setText(c);
@@ -175,8 +176,9 @@ public class PanelCliente extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    ListaBarcos lbarcos = new ListaBarcos();
+    ListaBarcos lbarcos = new ListaBarcos(Nombre);
     lbarcos.setVisible(true);
+    lbarcos.setDefaultCloseOperation(ListaBarcos.DISPOSE_ON_CLOSE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

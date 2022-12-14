@@ -4,6 +4,9 @@
  */
 package Visual.interfaces;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author framo
@@ -16,7 +19,11 @@ public class ListaBarcos extends javax.swing.JFrame {
     public ListaBarcos() {
         initComponents();
     }
-
+    
+    public ListaBarcos(String n) {
+        initComponents();
+        nombre.setText(n);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,20 +35,20 @@ public class ListaBarcos extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         PanelLista = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        nombre = new javax.swing.JLabel();
+        agregar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         PanelLista.setLayout(new javax.swing.BoxLayout(PanelLista, javax.swing.BoxLayout.Y_AXIS));
         jScrollPane1.setViewportView(PanelLista);
 
-        jLabel1.setText("Nombre del cliente");
+        nombre.setText("Nombre del cliente");
 
-        jButton2.setText("Agregar Barco");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        agregar.setText("Agregar Barco");
+        agregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                agregarActionPerformed(evt);
             }
         });
 
@@ -54,9 +61,9 @@ public class ListaBarcos extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)))
+                        .addComponent(agregar, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -64,8 +71,8 @@ public class ListaBarcos extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(9, 9, 9)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jButton2))
+                    .addComponent(nombre)
+                    .addComponent(agregar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
                 .addContainerGap())
@@ -74,11 +81,27 @@ public class ListaBarcos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-      PanelBarco pbarco = new PanelBarco();
+    private void agregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregarActionPerformed
+    AgregarBarco nuevobarco = new AgregarBarco();
+    nuevobarco.setVisible(true);
+
+    nuevobarco.guardar.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent e) {
+      
+      String nom = nuevobarco.nombreEmb.getText();
+
+      PanelBarco pbarco = new PanelBarco(nom);
       PanelLista.add(pbarco);
-      PanelLista.updateUI();
-    }//GEN-LAST:event_jButton2ActionPerformed
+      PanelLista.updateUI();  
+      nuevobarco.dispose();
+    }
+    });    
+        
+        
+        
+        
+ 
+    }//GEN-LAST:event_agregarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -117,8 +140,8 @@ public class ListaBarcos extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JPanel PanelLista;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton agregar;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel nombre;
     // End of variables declaration//GEN-END:variables
 }
