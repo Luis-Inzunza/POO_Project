@@ -59,6 +59,28 @@ public class Query {
         return devolver;
     }
 
+    public static String registrarcliente(Connection con, Cliente clie)
+    {
+        PreparedStatement ps;
+        String devolver;
+        String reg = "INSERT INTO Clientes (Nombre, Apellido, Telefono, Correo, Barcos) VALUES(?,?,?,?,?)";
+
+        try {
+            ps = con.prepareStatement(reg);
+            ps.setString(1, clie.getNombre());
+            ps.setString(2, clie.getApe());
+            ps.setString(3, clie.getTelefono());
+            ps.setString(4, clie.getCorreo());
+            ps.setString(5, clie.getbarcos());
+            ps.executeUpdate();
+            devolver = "Se ha subido correctamente";
+            
+        } catch (SQLException e) {
+            devolver = e.toString();
+        }
+        return devolver;
+    }
+
     public static List<Cliente> mostrarCliente(Connection con)
     {
         PreparedStatement ps;

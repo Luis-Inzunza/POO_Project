@@ -4,21 +4,32 @@
  */
 package Visual.interfaces;
 
+import Visual.interfaces.ListaBarcos;
+
+
 /**
  *
  * @author framo
  */
 public class PanelCliente extends javax.swing.JPanel {
-
-    public String Nombre = "Nombre:";
-    public String NumBarco = "Num. Barcos:";
-    public String Fecha = "Fechas:";
-    
     /**
      * Creates new form PanelCliente
      */
+     public String Nombre = "Nombre:";
+     public String NumBarco = "Num. Barcos:";
+     public String Fecha_S = "Creación";
+
     public PanelCliente() {
         initComponents();
+    }
+    
+    public PanelCliente(String n,String t,String c) {
+        initComponents();
+        nombreC.setText(n);
+        telC.setText(t);
+        correoC.setText(c);
+        
+    
     }
 
     /**
@@ -31,12 +42,18 @@ public class PanelCliente extends javax.swing.JPanel {
     public void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        NomCliente = new javax.swing.JLabel();
-        NumBarcos = new javax.swing.JLabel();
-        Fechas = new javax.swing.JLabel();
+        nombreC = new javax.swing.JLabel();
+        A = new javax.swing.JLabel();
+        B = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        C = new javax.swing.JLabel();
+        D = new javax.swing.JLabel();
+        num = new javax.swing.JLabel();
+        fecha = new javax.swing.JLabel();
+        correoC = new javax.swing.JLabel();
+        telC = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -53,16 +70,16 @@ public class PanelCliente extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(32767, 110));
         setMinimumSize(new java.awt.Dimension(1000, 110));
 
-        NomCliente.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 18)); // NOI18N
-        NomCliente.setText(Nombre);
+        nombreC.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 18)); // NOI18N
+        nombreC.setText(Nombre);
 
-        NumBarcos.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        NumBarcos.setText(NumBarco);
+        A.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        A.setText(NumBarco);
 
-        Fechas.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        Fechas.setText(Fecha);
+        B.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        B.setText(Fecha_S);
 
-        jButton1.setText("Embarcacion");
+        jButton1.setText("Embarcaciones");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -85,6 +102,20 @@ public class PanelCliente extends javax.swing.JPanel {
             }
         });
 
+        C.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        C.setText("Correo:");
+
+        D.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
+        D.setText("Tel:");
+
+        num.setText("jLabel1");
+
+        fecha.setText("jLabel2");
+
+        correoC.setText("jLabel3");
+
+        telC.setText("jLabel4");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -93,12 +124,24 @@ public class PanelCliente extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jButton1)
                 .addGap(31, 31, 31)
-                .addComponent(NomCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nombreC, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(80, 80, 80)
-                .addComponent(NumBarcos)
-                .addGap(101, 101, 101)
-                .addComponent(Fechas)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 352, Short.MAX_VALUE)
+                .addComponent(A)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(num)
+                .addGap(65, 65, 65)
+                .addComponent(B)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(fecha)
+                .addGap(52, 52, 52)
+                .addComponent(C)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(correoC)
+                .addGap(35, 35, 35)
+                .addComponent(D)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(telC)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -108,10 +151,16 @@ public class PanelCliente extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(NomCliente)
-                    .addComponent(NumBarcos)
-                    .addComponent(Fechas)
-                    .addComponent(jButton1))
+                    .addComponent(nombreC)
+                    .addComponent(A)
+                    .addComponent(B)
+                    .addComponent(jButton1)
+                    .addComponent(C)
+                    .addComponent(D)
+                    .addComponent(num)
+                    .addComponent(fecha)
+                    .addComponent(correoC)
+                    .addComponent(telC))
                 .addContainerGap(45, Short.MAX_VALUE))
             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -133,12 +182,18 @@ public class PanelCliente extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Fechas;
-    private javax.swing.JLabel NomCliente;
-    private javax.swing.JLabel NumBarcos;
+    private javax.swing.JLabel A;
+    private javax.swing.JLabel B;
+    private javax.swing.JLabel C;
+    private javax.swing.JLabel D;
+    private javax.swing.JLabel correoC;
+    private javax.swing.JLabel fecha;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel nombreC;
+    private javax.swing.JLabel num;
+    private javax.swing.JLabel telC;
     // End of variables declaration//GEN-END:variables
 }

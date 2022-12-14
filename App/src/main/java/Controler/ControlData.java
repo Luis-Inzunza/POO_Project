@@ -3,6 +3,9 @@ package Controler;
 import java.sql.*;
 import java.util.List;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 import Clases.Cliente;
 public class ControlData {
     
@@ -18,6 +21,7 @@ public class ControlData {
         catch(Exception e)
         {
             System.out.println(e);
+            
         }
        
     }
@@ -30,9 +34,14 @@ public class ControlData {
             lista = Model.Query.mostrarCliente(con);
         }catch(Exception e)
         {
-            System.out.println(e);
+            JOptionPane.showMessageDialog(null, e);
         }
         
         return lista;
+    }
+
+    public static void crearcliente()
+    {
+        
     }
 }

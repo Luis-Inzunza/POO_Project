@@ -5,10 +5,13 @@
 package Visual.interfaces;
 
 import com.formdev.flatlaf.FlatLightLaf;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.UIManager;
+
 
 import Clases.Cliente;
 
-import javax.swing.UIManager;
 import Model.ConfTabla;
 import Model.Modelo;
 import Model.Query;
@@ -21,6 +24,7 @@ import Controler.ControlData;
 import Controler.Controlador;
 import Visual.Interfaz;
 
+/**
 /**
  *
  * @author framo
@@ -108,10 +112,34 @@ public class ListaClientes extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void AgregarBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarBotonActionPerformed
-      PanelCliente pcliente = new PanelCliente();
+      AgregarCliente nuevocliente = new AgregarCliente();
+      nuevocliente.setVisible(true);
+
+    nuevocliente.guardar.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent e) {
+      
+      String nom = nuevocliente.nombre.getText();
+      String tel = nuevocliente.telefono.getText();
+      String correo = nuevocliente.correo.getText();
+      System.out.println(nom + tel + correo);
+      PanelCliente pcliente = new PanelCliente(nom,tel,correo);
       PanelLista.add(pcliente);
-      PanelLista.updateUI();
+      PanelLista.updateUI();  
+      
+    }
+    });
+      
+
+
     }//GEN-LAST:event_AgregarBotonActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        new Caducados().setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public void LeerClientes() {//GEN-FIRST:event_AgregarBotonActionPerformed
         conect();
@@ -124,7 +152,7 @@ public class ListaClientes extends javax.swing.JFrame {
                 System.out.print(clientes.get(x).getNombre());
                 PanelCliente pcliente = new PanelCliente();
                 pcliente.Nombre = clientes.get(x).getNombre() + " " + clientes.get(x).getApe();
-                pcliente.Fecha = clientes.get(x).getCorreo();
+                pcliente.Fecha_S = clientes.get(x).getCorreo();
                 pcliente.NumBarco += " " + clientes.get(x).getbarcos();
                 pcliente.initComponents();
                 PanelLista.add(pcliente);
@@ -137,31 +165,24 @@ public class ListaClientes extends javax.swing.JFrame {
 
       }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        new Caducados().setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
         
-        //FlatLightLaf.setup();
+        FlatLightLaf.setup();
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-
         try {
             UIManager.setLookAndFeel( new FlatLightLaf() );
         } catch( Exception ex ) {
             System.err.println( "Failed to initialize LaF" );
         }
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -170,21 +191,19 @@ public class ListaClientes extends javax.swing.JFrame {
             }
         });
     }
-
-    public static void conect()
-    {
-        try
+        public static void conect()
         {
-            ControlData.Conect();
-            //System.out.println(Query.registrar(cc, "Palomon", "121234", "Ni idea", "Wakanda", "Vibranio"));
-            
-        }
-        catch(Exception e)
-        {
-            System.out.println(e);
-        }
+            try
+            {
+                ControlData.Conect();
+                //System.out.println(Query.registrar(cc, "Palomon", "121234", "Ni idea", "Wakanda", "Vibranio"));
+                
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AgregarBoton;
     private javax.swing.JPanel PanelLista;
