@@ -25,17 +25,14 @@ public class PanelCliente extends javax.swing.JPanel {
         initComponents();
     }
     
-    public PanelCliente(String n,String t,String c) {
+    public PanelCliente(String n,String t,String c, String da, int xd) {
         initComponents();
-        Date fechaActual = new Date();
-        SimpleDateFormat formateador = new SimpleDateFormat("dd/MM/yyyy");
-        String fechaComoTexto = formateador.format(fechaActual);
         Nombre=n;
         nombreC.setText(n);
         telC.setText(t);
         correoC.setText(c);
-        num.setText("0");
-        fecha.setText(fechaComoTexto);
+        num.setText(Integer.toString(xd));
+        fecha.setText(da);
         
     
     }
@@ -78,16 +75,16 @@ public class PanelCliente extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(32767, 110));
         setMinimumSize(new java.awt.Dimension(1000, 110));
 
-        nombreC.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 18)); // NOI18N
+        nombreC.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 20)); // NOI18N
         nombreC.setText("Nombre ");
 
         NumBarcos.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
         NumBarcos.setText("Num. Barcos:");
 
         Fechas.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 12)); // NOI18N
-        Fechas.setText("Fechas:");
+        Fechas.setText("Fecha:");
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Embarcaciones");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -132,7 +129,7 @@ public class PanelCliente extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jButton1)
                 .addGap(31, 31, 31)
-                .addComponent(nombreC, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nombreC, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(80, 80, 80)
                 .addComponent(NumBarcos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)

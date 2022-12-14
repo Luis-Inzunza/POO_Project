@@ -1,26 +1,38 @@
 package Clases;
 
 public class Cliente {
-    private String barcos = "0";
+    private int barcos = 0;
     private String Nombre = "0";
     private String Ape = "0"; 
     private String Correo = "0"; 
     private String Telefono = "0";
+    private String Fecha = "0";
     public Cliente(){}
-    public  Cliente(String barcos, String Nombre, String Ape, String Correo, String Telefono)
+    public  Cliente(int barcos, String Nombre, String Ape, String Correo, String Telefono, String Fecha)
     {
         this.barcos = barcos;
         this.Nombre = Nombre;
         this.Ape = Ape;
         this.Correo = Correo;
         this.Telefono = Telefono;
+        this.Fecha = Fecha;
     }
-    public String getbarcos()
+    public String getFecha()
+    {
+        return this.Fecha;
+    }
+
+    public void setFecha(String Nom)
+    {
+        this.Fecha = Nom;
+    }
+
+    public int getbarcos()
     {
         return this.barcos;
     }
 
-    public void setbarcos(String barcos)
+    public void setbarcos(int barcos)
     {
         this.barcos = barcos;
     }

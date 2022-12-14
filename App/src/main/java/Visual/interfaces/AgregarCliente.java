@@ -42,6 +42,8 @@ public class AgregarCliente extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         telefono = new javax.swing.JTextField();
         guardar = new javax.swing.JButton();
+        jPanelape = new javax.swing.JLabel();
+        apellido = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,7 +61,7 @@ public class AgregarCliente extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -77,6 +79,12 @@ public class AgregarCliente extends javax.swing.JFrame {
 
         nombre.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
         nombre.setForeground(new java.awt.Color(153, 153, 153));
+
+        jPanelape.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
+        jPanelape.setText("Apellido");
+
+        apellido.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
+        apellido.setForeground(new java.awt.Color(153, 153, 153));
 
         jLabel6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
         jLabel6.setText("Correo");
@@ -112,6 +120,8 @@ public class AgregarCliente extends javax.swing.JFrame {
                             .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(correo, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanelape, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(379, Short.MAX_VALUE))
@@ -129,6 +139,10 @@ public class AgregarCliente extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addGap(11, 11, 11)
                 .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanelape)
+                .addGap(11, 11, 11)
+                .addComponent(apellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel6)
                 .addGap(11, 11, 11)
@@ -209,5 +223,7 @@ public class AgregarCliente extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     public javax.swing.JTextField nombre;
     public javax.swing.JTextField telefono;
+    private javax.swing.JLabel jPanelape;
+    public javax.swing.JTextField apellido;
     // End of variables declaration//GEN-END:variables
 }

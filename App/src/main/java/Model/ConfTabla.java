@@ -52,6 +52,7 @@ public class ConfTabla {
                             "Telefono	INTEGER NOT NULL,"+
                             "Correo	TEXT NOT NULL,"+
                             "Barcos	INTEGER NOT NULL,"+
+                            "Fecha TEXT NOT NULL,"+
                             "PRIMARY KEY(Apellido));"; 
                 break;
         }

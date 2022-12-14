@@ -4,6 +4,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import Clases.Cliente;
 
 public class Query {
@@ -59,11 +61,11 @@ public class Query {
         return devolver;
     }
 
-    public static String registrarcliente(Connection con, Cliente clie)
+    public static boolean registrarcliente(Connection con, Cliente clie)
     {
         PreparedStatement ps;
-        String devolver;
-        String reg = "INSERT INTO Clientes (Nombre, Apellido, Telefono, Correo, Barcos) VALUES(?,?,?,?,?)";
+        boolean devolver = false;
+        String reg = "INSERT INTO Clientes (Nombre, Apellido, Telefono, Correo, Barcos, Fecha) VALUES(?,?,?,?,?,?)";
 
         try {
             ps = con.prepareStatement(reg);
@@ -71,12 +73,14 @@ public class Query {
             ps.setString(2, clie.getApe());
             ps.setString(3, clie.getTelefono());
             ps.setString(4, clie.getCorreo());
-            ps.setString(5, clie.getbarcos());
+            ps.setInt(5, clie.getbarcos());
+            ps.setString(6, clie.getFecha());
             ps.executeUpdate();
-            devolver = "Se ha subido correctamente";
+            devolver = true;
+            JOptionPane.showMessageDialog(null, "Se ha subido correctamente");
             
         } catch (SQLException e) {
-            devolver = e.toString();
+            JOptionPane.showMessageDialog(null, e.toString());
         }
         return devolver;
     }
@@ -98,8 +102,9 @@ public class Query {
                 client.setNombre(res.getString("Nombre"));
                 client.setApe(res.getString("Apellido"));
                 client.setCorreo(res.getString("Correo"));
-                client.setbarcos(res.getString("Barcos"));
+                client.setbarcos(Integer.valueOf(res.getString("Barcos")));
                 client.setTelefono(res.getString("Telefono"));
+                client.setFecha(res.getString("Fecha"));
                 lista.add(client);
             }
             

@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import Clases.Cliente;
+import Model.Query;
 public class ControlData {
     
     private static Connection con = null;
@@ -40,8 +41,18 @@ public class ControlData {
         return lista;
     }
 
-    public static void crearcliente()
+    public static boolean crearcliente(Cliente clie)
     {
-        
+        boolean creado = false;
+        if(!clie.getNombre().matches(".*[a-zA-Z]+.*") ||!clie.getApe().matches(".*[a-zA-Z]+.*"))
+        {
+            creado = false;
+            JOptionPane.showMessageDialog(null, "Favor de Introducir Caracteres Validos En Nombre y Apellido");
+        }else
+        {
+            creado =  Query.registrarcliente(con, clie);
+
+        }
+        return creado;
     }
 }

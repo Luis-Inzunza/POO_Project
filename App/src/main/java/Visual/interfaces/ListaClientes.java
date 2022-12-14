@@ -17,8 +17,10 @@ import Model.Modelo;
 import Model.Query;
 
 import java.sql.Connection;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Date;
 
 import Controler.ControlData;
 import Controler.Controlador;
@@ -120,15 +122,22 @@ public class ListaClientes extends javax.swing.JFrame {
     public void actionPerformed(ActionEvent e) {
       
       String nom = nuevocliente.nombre.getText();
+      String ape = nuevocliente.apellido.getText();
       String tel = nuevocliente.telefono.getText();
       String correo = nuevocliente.correo.getText();
-      System.out.println(nom + tel + correo);
-      PanelCliente pcliente = new PanelCliente(nom,tel,correo);
-      PanelLista.add(pcliente);
-      PanelLista.updateUI();  
-      nuevocliente.dispose();
-      
-     
+      Date fechaActual = new Date();
+      SimpleDateFormat formateador = new SimpleDateFormat("dd/MM/yyyy");
+      String fechaComoTexto = formateador.format(fechaActual);
+      System.out.print(fechaComoTexto);
+      Cliente clie = new Cliente(0,nom,ape,correo,tel,fechaComoTexto);
+      if(Controler.ControlData.crearcliente(clie))
+      {
+            PanelCliente pcliente = new PanelCliente(nom + " " + ape,tel,correo,fechaComoTexto,0);
+            PanelLista.add(pcliente);
+            PanelLista.updateUI();  
+            nuevocliente.dispose();
+        
+      }
       
     }
     });
@@ -155,14 +164,10 @@ public class ListaClientes extends javax.swing.JFrame {
         {
             for(int x =0;x<clientes.size();x++)
             {
-                System.out.print(clientes.get(x).getNombre());
-                PanelCliente pcliente = new PanelCliente();
-                pcliente.Nombre = clientes.get(x).getNombre() + " " + clientes.get(x).getApe();
-                pcliente.Fecha_S = clientes.get(x).getCorreo();
-                pcliente.NumBarco += " " + clientes.get(x).getbarcos();
-                pcliente.initComponents();
+                System.out.print(clientes.get(x).getFecha());
+                PanelCliente pcliente = new PanelCliente(clientes.get(x).getNombre() + " " + clientes.get(x).getApe(),clientes.get(x).getTelefono(),clientes.get(x).getCorreo(), clientes.get(x).getFecha(), clientes.get(x).getbarcos());
                 PanelLista.add(pcliente);
-                PanelLista.updateUI();
+                PanelLista.updateUI();  
             }
         }catch(Exception e)
         {
@@ -202,7 +207,6 @@ public class ListaClientes extends javax.swing.JFrame {
             try
             {
                 ControlData.Conect();
-                //System.out.println(Query.registrar(cc, "Palomon", "121234", "Ni idea", "Wakanda", "Vibranio"));
                 
             }
             catch(Exception e)
