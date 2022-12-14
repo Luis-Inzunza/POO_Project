@@ -39,9 +39,9 @@ public class Login extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        usuario = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        contraseña = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,9 +49,8 @@ public class Login extends javax.swing.JFrame {
         panel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Nombre_del_programa-removebg-preview.png"))); 
-        System.out.println("Working Directory = " + System.getProperty("user.dir"));
-// NOI18N
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Nombre_del_programa-removebg-preview.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
         jLabel2.setText("Nombre Del Programa");
@@ -95,17 +94,17 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setText("USUARIO");
         panel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, -1));
 
-        jTextField1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(153, 153, 153));
-        panel.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 240, -1));
+        usuario.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 10)); // NOI18N
+        usuario.setForeground(new java.awt.Color(153, 153, 153));
+        panel.add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 240, -1));
 
         jLabel6.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 14)); // NOI18N
         jLabel6.setText("CONTRASEÑA");
         panel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
 
-        jPasswordField1.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 10)); // NOI18N
-        jPasswordField1.setForeground(new java.awt.Color(153, 153, 153));
-        panel.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 240, -1));
+        contraseña.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 10)); // NOI18N
+        contraseña.setForeground(new java.awt.Color(153, 153, 153));
+        panel.add(contraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 240, -1));
 
         jButton1.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 10)); // NOI18N
         jButton1.setText("INGRESAR");
@@ -131,7 +130,12 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        new ListaClientes().setVisible(true);
+        
+        dispose();
+        ListaClientes Lista= new ListaClientes();
+        Lista.setVisible(true);
+        Lista.setDefaultCloseOperation(ListaClientes.DISPOSE_ON_CLOSE);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -161,6 +165,7 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField contraseña;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -169,8 +174,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JPanel panel;
+    private javax.swing.JTextField usuario;
     // End of variables declaration//GEN-END:variables
 }
