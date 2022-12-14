@@ -114,6 +114,7 @@ public class ListaClientes extends javax.swing.JFrame {
     private void AgregarBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarBotonActionPerformed
       AgregarCliente nuevocliente = new AgregarCliente();
       nuevocliente.setVisible(true);
+      nuevocliente.setDefaultCloseOperation(ListaClientes.DISPOSE_ON_CLOSE);
 
     nuevocliente.guardar.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
@@ -126,8 +127,13 @@ public class ListaClientes extends javax.swing.JFrame {
       PanelLista.add(pcliente);
       PanelLista.updateUI();  
       nuevocliente.dispose();
+      
+     
+      
     }
     });
+    
+
       
 
 
