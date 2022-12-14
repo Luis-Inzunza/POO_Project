@@ -125,7 +125,7 @@ public class ListaClientes extends javax.swing.JFrame {
       PanelCliente pcliente = new PanelCliente(nom,tel,correo);
       PanelLista.add(pcliente);
       PanelLista.updateUI();  
-      
+      nuevocliente.dispose();
     }
     });
       
@@ -141,7 +141,7 @@ public class ListaClientes extends javax.swing.JFrame {
         new Caducados().setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    public void LeerClientes() {//GEN-FIRST:event_AgregarBotonActionPerformed
+    public void LeerClientes() {                                             
         conect();
         List<Cliente> clientes = new ArrayList<Cliente>();
         clientes = ControlData.mostrarclientes();
