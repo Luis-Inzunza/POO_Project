@@ -1,6 +1,5 @@
 # Barquis Project
 
-![](/Media/Logo.png)
 ![](/Media/Interview.jpeg) 
 
 # Team Members
@@ -34,3 +33,11 @@ We work for Suarez Agency, focused on providing a faster solution to your permit
 * [Metric of Progress](/Files/Metrics1.pdf)
 
 * [Video presentation](https://youtu.be/NaFzGoXHl6E)
+
+## Second Stage :green_book:
+
+* [Material of presentation](/Files/SecondStage.pdf)
+
+* [Metric of Progress](/Files/Metrics2.pdf)
+
+* [Video presentation]()

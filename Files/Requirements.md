@@ -2,12 +2,14 @@
 
 ## Index
 
-* [Problem Description](#Item0)
-* [Main objective](#Item1)
-* [User Profile](#Item2)
-* [Scope and limitations of the project](#Item3)
-* [Functional Requirements](#Item4)
-* [No Functional Requirements](#Item5)
+* Problem Description
+* Main Objective
+* User Profile
+* Scope and Limitations of the project
+* User Stories
+* Functional Requirements
+* No Functional Requirements
+* Diagram Use case
 
 ## Problem Description
 Suarez Agency has been active for the last 30 years having the documentation required for the departure of commercial fishing vessels. 

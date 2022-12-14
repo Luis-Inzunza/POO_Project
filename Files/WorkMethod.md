@@ -26,3 +26,8 @@ This set was seen as beneficial so that we all learned how to improve our skills
 
     * Teams : Virtual team meetings
 
+* Canva: Tool for the design of interfaces and presentation material
+
+
+* Neatbeans IDE 15: IDE used for the creation of the java program and the ease of creating interfaces
+
