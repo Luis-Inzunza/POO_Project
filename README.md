@@ -1,7 +1,8 @@
+# Little Boat project
 
 ![](/Media/Interview.jpeg) 
 
-# Team Members
+## Team Members
 
 [Ileana Gabriela Castillo Sánchez](CVs/CV_CastilloIleana.pdf)
 
@@ -42,3 +43,10 @@ We work for Suarez Agency, focused on providing a faster solution to your permit
 
 * [Video presentation](https://youtu.be/cF7bQNKKRCI)
 
+## Final Stage :blue_book:
+
+* [Presentation Material](/Files/FinalStage.pdf)
+
+* [Progress Metrics](/Files/Metrics3.pdf)
+
+* [Video presentation]()
