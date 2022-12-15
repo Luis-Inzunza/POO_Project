@@ -1,0 +1,1 @@
+This is a code that maintains the MVC bases, in this phase time all the programming is taken to the "[Fase_de_pruebas](https://github.com/Luis-Inzunza/POO_Project/tree/Fase_de_pruebas/App)" branch.
