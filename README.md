@@ -28,16 +28,18 @@ We work for Suarez Agency, focused on providing a faster solution to your permit
 
 ## First Stage :closed_book:
 
-* [Material of presentation](/Files/First%20Stage.pdf)
+* [Presentation Material](/Files/First%20Stage.pdf)
 
-* [Metric of Progress](/Files/Metrics1.pdf)
+* [Progress Metrics](/Files/Metrics1.pdf)
 
 * [Video presentation](https://youtu.be/NaFzGoXHl6E)
 
+
 ## Second Stage :green_book:
 
-* [Material of presentation](/Files/SecondStage.pdf)
+* [Presentation Material](/Files/SecondStage.pdf)
 
-* [Metric of Progress](/Files/Metrics2.pdf)
+* [Progress Metrics](/Files/Metrics2.pdf)
 
 * [Video presentation](https://youtu.be/cF7bQNKKRCI)
+
