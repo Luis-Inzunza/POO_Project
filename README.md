@@ -1,6 +1,6 @@
 # Barquis Project
 
-![](/Media/Interview.jpeg)
+![](/Media/Interview.jpeg) 
 
 # Team Members
 
@@ -21,6 +21,7 @@ We work for Suarez Agency, focused on providing a faster solution to your permit
 ## Index :open_file_folder:
 
 * [Requirements](Files/Requirements.md)
+* [Design Interface](/Files/Design.md)
 * [Work Method and Tools](Files/WorkMethod.md)
 * [Diagram Class](Media/ClassDiagramBarquis.png)
 * [Logbook](/Files/LogBook%20Project.pdf)
@@ -33,10 +34,12 @@ We work for Suarez Agency, focused on providing a faster solution to your permit
 
 * [Video presentation](https://youtu.be/NaFzGoXHl6E)
 
-## Second Stage :closed_book:
 
-* [Presentation Material]()
+## Second Stage :green_book:
 
-* [Progress Metrics]()
+* [Presentation Material](/Files/SecondStage.pdf)
 
-* [Video Presentation]()
+* [Progress Metrics](/Files/Metrics2.pdf)
+
+* [Video presentation](https://youtu.be/cF7bQNKKRCI)
+
