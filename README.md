@@ -1,4 +1,3 @@
-# Barquis Project
 
 ![](/Media/Interview.jpeg) 
 
